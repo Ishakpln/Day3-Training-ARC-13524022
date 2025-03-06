@@ -1,6 +1,7 @@
 body {
   padding: 0px;
   margin: 0px;
+  overflow-x: hidden;
 }
 
 .background {
@@ -130,7 +131,7 @@ body {
 
 .footer {
   position: absolute;
-  top: 110%;
+  top: 108%;
   background-color: #050505;
   width: 100%;
   color: white;
