@@ -128,7 +128,7 @@ body {
 }
 
 .filter {
-  width: 13%;
+  width: 7%;
   height: 34px;
   border-radius: 4px;
   background-color: rgb(12, 198, 255);
@@ -201,10 +201,10 @@ body {
 }
 
 .product img {
-  width: 150px;
+  width: 250px;
   height: auto;
+  justify-self: center;
   border-radius: 8px;
-  margin-top: 10px;
 }
 
 .footer {

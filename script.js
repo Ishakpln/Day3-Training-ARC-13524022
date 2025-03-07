@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   productContainer.className = "product-container";
   document.querySelector(".products").appendChild(productContainer);
 
-  fetch("/api/products") // API Endpoint
+  fetch("Products")
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
@@ -18,8 +18,12 @@ document.addEventListener("DOMContentLoaded", function () {
         description.textContent = product.description;
         const price = document.createElement("h4");
         price.textContent = `$${product.price}`;
+        const image = document.createElement("img");
+        image.src = product.image;
+        image.style.width = "250px";
 
         productdiv.appendChild(title);
+        productdiv.appendChild(image);
         productdiv.appendChild(price);
         productdiv.appendChild(description);
         productContainer.appendChild(productdiv);
